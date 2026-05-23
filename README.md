@@ -1,6 +1,6 @@
 # Superstore Sales Dashboard
 
-A Streamlit dashboard for exploring Superstore sales performance from 2011 to 2014. The app uses the provided `data/superstore.csv` dataset to show sales, profit, customer, product, and regional performance through interactive charts and filters.
+A Streamlit dashboard for exploring Superstore sales performance from 2011 to 2014. The app uses the provided superstore.csv dataset to show sales, profit, customer, product, and regional performance through interactive charts and filters.
 
 ## Project Overview
 
@@ -17,6 +17,7 @@ This project analyzes retail sales data and presents the results in a dark-theme
 - Sidebar filters for year and region
 - CSV download button for the sales dataset
 
+
 ## Project Structure
 
 ```text
@@ -26,7 +27,8 @@ sales_dashboard_project/
 |-- data/
 |   `-- superstore.csv
 |-- notebooks.ipynb
-`-- README.md
+|-- README.md
+|-- requirements.txt
 ```
 
 
@@ -58,13 +60,13 @@ sales_dashboard_project/
 4. Install the required packages:
 
    ```powershell
-   pip install streamlit pandas plotly matplotlib
+   pip install streamlit pandas plotly
    ```
 
 5. Run the dashboard from the project root:
 
    ```powershell
-   streamlit run dashboard/app.py
+   streamlit run dashboard\app.py
    ```
 
 6. Open the local Streamlit URL shown in the terminal, usually:
@@ -76,7 +78,7 @@ sales_dashboard_project/
 
 ## Dashboard Pages
 
-### Sales Overview
+### Sales Analysis
 
 Shows core business KPIs and visualizations for sales by region, category, sub-category, product, and month. It also includes a year-over-year forecast.
 
