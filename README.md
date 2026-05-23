@@ -36,7 +36,7 @@ sales_dashboard_project/
 - Streamlit
 - Pandas
 - Plotly Express
-- Matplotlib
+
 
 ## Setup Instructions
 

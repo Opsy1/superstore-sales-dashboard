@@ -153,14 +153,8 @@ elif year != 'All' and region == 'All':
 else:
     filtered_df = df[(df['Region'] == region) & (df['Year'] == year)]
 
-# === Image at the bottom of the sidebar ===
-st.sidebar.divider()
-st.sidebar.image(
-    "hieliteLogo.png",
-    use_container_width=True,
-    caption="Opeyemi Fayemi - Data Analyst Trainee | Hielite Academy",
-    
-)
+   
+
 
 # Dashboard Header and Download Button
 dashboard_title_col1, download_button_col2 = st.columns([5,1])
