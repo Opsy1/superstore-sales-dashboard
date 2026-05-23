@@ -16,7 +16,7 @@ st.markdown(
     }
     /* Sidebar background and text */
     [data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #262730 0%, #1a1c24 100%);
+        background-color: #262730;
         color: #ab63fa;
     }
      [data-testid="stSidebar"] * {
@@ -122,7 +122,7 @@ st.set_page_config(page_title='Superstore Sales Dashboard', layout='wide', page_
 st.sidebar.title('Dashboard Menu')
 dashboard_menu= st.sidebar.radio(
     'Select Dashboard',
-    ['Sales Overview', 'Profit Analysis', 'Customer & Geographical Analysis', 'Business Insights']
+    ['Sales Analysis', 'Profit Analysis', 'Customer & Geographical Analysis', 'Business Insights']
     
 )
 
@@ -159,7 +159,7 @@ st.sidebar.image(
     "hieliteLogo.png",
     use_container_width=True,
     caption="Opeyemi Fayemi - Data Analyst Trainee | Hielite Academy",
-    output_format="PNG"
+    
 )
 
 # Dashboard Header and Download Button
@@ -177,8 +177,8 @@ with download_button_col2:
 ) 
 #st.divider()
 
-if dashboard_menu == 'Sales Overview':
-    st.header('Sales Overview Dashboard')
+if dashboard_menu == 'Sales Analysis':
+    st.header('Sales Analysis Dashboard')
     
     
     # KPIs
@@ -508,9 +508,9 @@ elif dashboard_menu == 'Business Insights':
         * New York City shows the highest performing city with over 50% more than other cities in the top 10 cities by profit.
         * Monthly sales trend shows a growth in sales from January to December each year and for cumulative year. There is 20% growth in sales in year 2014 which was used as a basic for sales forecast in year 2015.
             
-            **What to focus on:**
+            **Recommendations:**
             * Focus on the top-performing region for aggressive growth.
-            * High-profit cities should receive more marketing and inventory support but focus should be on other cities leaving New York City.
+            * High-profit cities should receive more marketing and inventory support but focus should be on other cities than New York City.
             * Reduce discounts and logistics in low-profit regions to improve margins.
             * Expand operations in high-profit states identified on the map.
 
@@ -524,7 +524,7 @@ elif dashboard_menu == 'Business Insights':
         st.write("""
         * All the product category performs well in the years reviewed as the percentage contributed are closed to each other.
         
-            **What to focus on:**
+            **Recommendations:**
             * Protect and promote the Top 10 products as they drive significant revenue.
             * Expand high-performing sub-categories and review low-performing ones.
 
@@ -535,7 +535,7 @@ elif dashboard_menu == 'Business Insights':
         st.write("""
         * Consumer segment shows highest sales and profit compared to corporate segment and home office.
             
-            **What to focus on:**
+            **Recommendations:**
             * Prioritize the most profitable customer segment for targeted campaigns.
             * Ensure customers loyalty program in other to retain active customers.
             * Review segments with high sales but low profit margins.
